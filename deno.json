@@ -54,8 +54,7 @@
         "commander": "https://esm.sh/commander@^13.1.0"
     },
     "unstable": [
-        "sloppy-imports",
-        "unstable-otel"
+        "sloppy-imports"
     ],
     "fmt": {
         "useTabs": false,

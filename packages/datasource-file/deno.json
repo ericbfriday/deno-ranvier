@@ -4,11 +4,11 @@
     "exports": {
         ".": "./index.ts",
         "./FileDataSource": "./src/FileDataSource.ts",
-        "./JsonDataSource": "./src/JsonDataSource",
-        "./JsonDirectoryDataSource": "./src/JsonDirectoryDataSource",
-        "./YamlAreaDataSource": "./src/YamlAreaDataSource",
-        "./YamlDataSource": "./src/YamlDataSource",
-        "./YamlDirectoryDataSource": "./src/YamlDirectoryDataSource"
+        "./JsonDataSource": "./src/JsonDataSource.ts",
+        "./JsonDirectoryDataSource": "./src/JsonDirectoryDataSource.ts",
+        "./YamlAreaDataSource": "./src/YamlAreaDataSource.ts",
+        "./YamlDataSource": "./src/YamlDataSource.ts",
+        "./YamlDirectoryDataSource": "./src/YamlDirectoryDataSource.ts"
     },
     "tasks": {
         "dev": "deno run --check --watch --allow-read index.ts"
