@@ -1,0 +1,6 @@
+[submodule "packages/ranvier"]
+	path = packages/ranvier
+	url = https://github.com/ericbfriday/ranvier-core-ts
+[submodule "packages/ranviermud-ts"]
+	path = packages/ranviermud-ts
+	url = https://github.com/Ranvier-TS/RanvierMud-TS

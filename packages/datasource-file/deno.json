@@ -1,0 +1,23 @@
+{
+    "name": "@friday/ranvier-datasource-file",
+    "version": "0.0.1",
+    "exports": {
+        ".": "./index.ts",
+        "./FileDataSource": "./src/FileDataSource.ts",
+        "./JsonDataSource": "./src/JsonDataSource",
+        "./JsonDirectoryDataSource": "./src/JsonDirectoryDataSource",
+        "./YamlAreaDataSource": "./src/YamlAreaDataSource",
+        "./YamlDataSource": "./src/YamlDataSource",
+        "./YamlDirectoryDataSource": "./src/YamlDirectoryDataSource"
+    },
+    "tasks": {
+        "dev": "deno run --check --watch --allow-read index.ts"
+    },
+    "lint": {
+        "rules": {
+            "exclude": [
+                "require-await"
+            ]
+        }
+    }
+}

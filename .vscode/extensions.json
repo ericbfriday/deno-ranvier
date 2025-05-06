@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "denoland.vscode-deno",
+        "editorconfig.editorconfig",
+        "johnsoncodehk.vscode-tsconfig-helper",
+        "orta.vscode-twoslash-queries",
+        "redhat.vscode-yaml",
+        "arcanis.vscode-zipfs",
+        "redhat.vscode-xml"
+    ]
+}

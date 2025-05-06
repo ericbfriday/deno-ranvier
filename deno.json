@@ -1,0 +1,104 @@
+{
+    "tasks": {
+        "test:all": "deno test",
+        "lint:all": "deno lint",
+        "fmt:all": "demo fmt"
+    },
+    "workspace": [
+        "./packages/ranvier",
+        "./packages/ranviermud-ts",
+        "./packages/datasource-file",
+        "./packages/datasource-sqlite"
+    ],
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true
+    },
+    "imports": {
+        "@logtape/file": "jsr:@logtape/file@^0.9.1",
+        "@logtape/logtape": "jsr:@logtape/logtape@^0.9.1",
+        "@std/assert": "jsr:@std/assert@1",
+        "@std/async": "jsr:@std/async@^1.0.12",
+        "@std/cache": "jsr:@std/cache@^0.2.0",
+        "@std/cli": "jsr:@std/cli@^1.0.17",
+        "@std/collections": "jsr:@std/collections@^1.0.11",
+        "@std/crypto": "jsr:@std/crypto@^1.0.4",
+        "@std/dotenv": "jsr:@std/dotenv@^0.225.3",
+        "@std/encoding": "jsr:@std/encoding@^1.0.10",
+        "@std/fmt": "jsr:@std/fmt@^1.0.7",
+        "@std/fs": "jsr:@std/fs@^1.0.17",
+        "@std/http": "jsr:@std/http@^1.0.15",
+        "@std/io": "jsr:@std/io@^0.225.2",
+        "@std/json": "jsr:@std/json@^1.0.2",
+        "@std/jsonc": "jsr:@std/jsonc@^1.0.2",
+        "@std/log": "jsr:@std/log@^0.224.14",
+        "@std/net": "jsr:@std/net@^1.0.4",
+        "@std/path": "jsr:@std/path@^1.0.9",
+        "@std/random": "jsr:@std/random@^0.1.0",
+        "@std/semver": "jsr:@std/semver@^1.0.5",
+        "@std/text": "jsr:@std/text@^1.0.13",
+        "@std/uuid": "jsr:@std/uuid@^1.0.7",
+        "@std/yaml": "jsr:@std/yaml@^1.0.6",
+        "@stdext/assert": "jsr:@stdext/assert@^0.1.0",
+        "@stdext/crypto": "jsr:@stdext/crypto@^0.1.0",
+        "@stdext/encoding": "jsr:@stdext/encoding@^0.1.0",
+        "@total-typescript/ts-reset": "npm:@total-typescript/ts-reset@^0.6.1",
+        "@valibot/valibot": "jsr:@valibot/valibot@^1.0.0",
+        "ws": "npm:ws@8.18.1",
+        "pinia": "https://esm.sh/pino@^9.6.0",
+        "tsyringe": "https://esm.sh/tsyringe@^4.10.0",
+        "ranvier-datasource-file": "https://esm.sh/ranvier-datasource-file@^1.0.3",
+        "ranvier-telnet": "https://esm.sh/ranvier-telnet@^1.0.3",
+        "humanize-duration": "https://esm.sh/humanize-duration",
+        "sprintf-js": "https://esm.sh/sprintf-js",
+        "commander": "https://esm.sh/commander@^13.1.0"
+    },
+    "unstable": [
+        "sloppy-imports",
+        "unstable-otel"
+    ],
+    "fmt": {
+        "useTabs": false,
+        "lineWidth": 120,
+        "indentWidth": 4,
+        "semiColons": true,
+        "singleQuote": true,
+        "proseWrap": "preserve",
+        "include": [
+            "main.ts",
+            "packages/**/*.ts"
+        ],
+        "exclude": [
+            "**/dist/",
+            "**/node_modules/",
+            "packages/ranvier-app"
+        ]
+    },
+    "lint": {
+        "include": [
+            "packages/ranvier/**/*.ts",
+            "packages/ranviermud-ts/**/*.ts"
+        ],
+        "exclude": [
+            "**/dist/",
+            "**/node_modules/",
+            "packages/ranvier-app"
+        ],
+        "rules": {
+            "tags": [
+                "recommended"
+            ],
+            "include": [
+                "guard-for-in",
+                "no-throw-literal",
+                "no-useless-rename",
+                "verbatim-module-syntax"
+            ],
+            "exclude": [
+                "no-slow-types",
+                "no-unused-vars",
+                "no-explicit-any"
+            ]
+        }
+    }
+}
